@@ -1,0 +1,127 @@
+/* Base layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Light Mode */
+body.light {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+body.light textarea {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 8px; /* Rounded corners for textareas */
+    padding: 12px;
+    transition: border 0.3s ease;
+}
+
+body.light .gr-button {
+    background-color: #007bff !important; /* Blue button color */
+    color: white !important;
+    border: none !important;
+    border-radius: 8px; /* Rounded button */
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+body.light .gr-button:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle hover lift */
+}
+
+body.light h1,
+body.light .gr-markdown {
+    color: #0284c7 !important;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body.light .gr-textbox label {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+body.dark textarea {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px; /* Rounded corners for textareas */
+    padding: 12px;
+    transition: border 0.3s ease;
+}
+
+body.dark .gr-button {
+    background-color: #007bff !important; /* Blue button color */
+    color: white !important;
+    border: none !important;
+    border-radius: 8px; /* Rounded button */
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+body.dark .gr-button:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle hover lift */
+}
+
+body.dark h1,
+body.dark .gr-markdown {
+    color: #f97316 !important;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body.dark .gr-textbox label {
+    color: #f8fafc;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .gr-row {
+        flex-direction: column !important;
+    }
+
+    textarea, input {
+        width: 100% !important;
+    }
+
+    .gr-button {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+}
+
+/* Hide footer */
+footer, .svelte-1ipelgc {
+    display: none !important;
+}
+
